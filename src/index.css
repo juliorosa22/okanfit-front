@@ -1,0 +1,393 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #020537;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #01077c;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/*#########################*/
+/* OkanFit Home Hero Section */
+.okanfit-hero-logo {
+  height: 180px;              /* Increased size */
+  width: 180px;               /* Increased size */
+  max-width: 220px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 0;
+  /* Hexagon shape using clip-path */
+  clip-path: polygon(
+    25% 6%, 75% 6%,
+    100% 50%,
+    75% 94%, 25% 94%,
+    0% 50%
+  );
+  background: #020537;
+  border-radius: 2rem; 
+  
+}
+
+.okanfit-hero-section {
+  text-align: left;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  border-radius: 2rem; 
+  background: linear-gradient(15deg, #2b2b30 30%, #020537 80%);
+  margin: 0 auto;
+  box-shadow: 0 4px 24px 0 rgba(8,127,231,0.08);
+  
+}
+
+.okanfit-hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.okanfit-hero-subtitle {
+  font-size: 1.25rem;
+  color: #64748b;
+  margin-top: 0.75rem;
+}
+
+.okanfit-hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.okanfit-hero-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+/*#########################*/
+/* OkanFit Global Header */
+.okanfit-header {
+  width: 100%;
+  background: #18181c;              /* Black background */
+  border-bottom: none;           /* Remove bottom border for a cleaner look */
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+  border-radius: 1.5rem;         /* Large rounded corners */
+  margin-top: 1.5rem;            /* Add some space above */
+  overflow: visible;              /* <-- Allow dropdowns to overflow header */
+  position: relative; /* <-- Ensure stacking context for dropdown */
+}
+
+.okanfit-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.5rem 1.5rem;
+}
+
+.okanfit-logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.okanfit-header-logo {
+  height: 40px;
+  width: 40px;
+  margin-right: 12px;
+}
+
+.okanfit-header-title {
+  font-weight: 700;
+  font-size: 22px;
+  color: #fbfbfb;
+  letter-spacing: 1px;
+}
+
+.okanfit-nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.okanfit-nav-link {
+  margin-right: 1.5rem;
+  font-weight: 500;
+  color: #fff; /* Set text color to white */
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.okanfit-nav-link:last-child {
+  margin-right: 0;
+}
+
+.okanfit-nav-link:hover {
+  color: #087FE7;
+}
+
+/*#########################*/
+/* Language Switcher Dropdown */
+.okanfit-lang-switcher {
+  position: relative;
+  display: inline-block;
+  margin-left: 1.5rem;
+  z-index: 20; /* <-- Ensure dropdown is above header */
+}
+
+.okanfit-lang-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.4em 1.2em 0.4em 0.8em;
+  border-radius: 8px;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.okanfit-lang-btn:hover,
+.okanfit-lang-btn:focus {
+  background: #222;
+  outline: none;
+}
+
+.okanfit-lang-dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 110%;
+  background: #181818;
+  min-width: 120px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+  z-index: 30; /* <-- Higher than header/nav */
+  padding: 0.25rem 0;
+}
+
+.okanfit-lang-switcher.open .okanfit-lang-dropdown {
+  display: block;
+}
+
+.okanfit-lang-option {
+  width: 100%;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  text-align: left;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.okanfit-lang-option.selected,
+.okanfit-lang-option:hover {
+  background: #087FE7;
+  color: #fff;
+}
+
+/*#########################*/
+/* Announcements Section */
+.okanfit-announcements-section {
+  background: linear-gradient(15deg, #2b2b30 30%, #020537 80%);
+  border-radius: 2rem;
+  box-shadow: 0 4px 24px 0 rgba(8,127,231,0.08);
+  margin: 2rem auto;
+  max-width: 1000px;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  min-height: 340px;
+  overflow: hidden;
+}
+
+.okanfit-announcements-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.okanfit-announcements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  overflow-y: auto;
+  max-height: 320px;
+  padding-right: 0.5rem;
+}
+
+/* News Card */
+.okanfit-news-card {
+  display: flex;
+  align-items: center;
+  background: #302f37;
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 8px 0 rgba(8,127,231,0.06);
+  padding: 1.2rem 1.5rem;
+  gap: 1.5rem;
+  min-height: 110px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.okanfit-news-card:hover {
+  box-shadow: 0 4px 16px 0 rgba(0, 1, 1, 0.13);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.okanfit-news-card-image {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 1rem;
+  background: #000000;
+  flex-shrink: 0;
+}
+
+.okanfit-news-card-desc {
+  flex: 1;
+  color: #ffffff;
+  font-size: 1.1rem;
+  text-align: left;
+  line-height: 1.5;
+}
+
+/* Scrollbar styling for announcements list */
+.okanfit-announcements-list {
+  scrollbar-width: thin;
+  scrollbar-color: #000000 #e5e7eb;
+}
+.okanfit-announcements-list::-webkit-scrollbar {
+  width: 8px;
+}
+.okanfit-announcements-list::-webkit-scrollbar-thumb {
+  background: #087FE7;
+  border-radius: 8px;
+}
+.okanfit-announcements-list::-webkit-scrollbar-track {
+  background: #e5e7eb;
+  border-radius: 8px;
+}
+
+/*#########################*/
+/* OkanFit Footer */
+.okanfit-footer {
+  width: 100%;
+  background: #18181c;
+  border-radius: 1.5rem;
+  margin: 2rem auto 0 auto;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.10);
+  position: relative;
+  overflow: visible;
+  padding: 1.2rem 0 0.8rem 0;
+}
+
+.okanfit-footer-nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.okanfit-footer-links {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.okanfit-footer-link {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: color 0.2s;
+}
+
+.okanfit-footer-link:hover {
+  color: #087FE7;
+}
+
+.okanfit-footer-sep {
+  color: #444;
+  margin: 0 0.5rem;
+}
+
+.okanfit-footer-copy {
+  color: #aaa;
+  font-size: 0.95rem;
+  text-align: center;
+}
