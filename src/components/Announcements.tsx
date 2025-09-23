@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import NewsCard from './NewsCard';
-import okanfitLogo from '../assets/okanfit_logo_colored.svg';
+import okanfitLogo from '../assets/icon_nobg_okanassist.png';
 
 const Announcements: React.FC = () => {
   const { t } = useTranslation();

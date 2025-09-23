@@ -312,7 +312,7 @@ button:focus-visible {
   height: 90px;
   object-fit: cover;
   border-radius: 1rem;
-  background: #000000;
+  background: #ffffff;
   flex-shrink: 0;
 }
 
@@ -390,4 +390,20 @@ button:focus-visible {
   color: #aaa;
   font-size: 0.95rem;
   text-align: center;
+}
+
+/*#########################*/
+/* Page Content Defaults */
+.page-content-defaults {
+  color: #f1f1f1; /* Dark blue text */
+  background: #191717;
+  border-radius: 2rem;
+  box-shadow: 0 4px 24px 0 rgba(8,127,231,0.08);
+  margin: 2.5rem auto;
+  padding: 2.5rem 2rem;
+  max-width: 1000px;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
