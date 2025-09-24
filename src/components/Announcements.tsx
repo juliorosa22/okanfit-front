@@ -12,7 +12,7 @@ const Announcements: React.FC = () => {
         <NewsCard
           image={okanfitLogo}
           description={t('OkanAssist_announcement')}
-          to="/about"
+          to="/news"
         />
       </div>
     </section>
