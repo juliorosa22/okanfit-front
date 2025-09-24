@@ -7,7 +7,7 @@ const Announcements: React.FC = () => {
 
   return (
     <section className="okanfit-announcements-section">
-      <h2 className="okanfit-announcements-title">Announcements</h2>
+      <h2 className="okanfit-announcements-title">{t('announcements')}</h2>
       <div className="okanfit-announcements-list">
         <NewsCard
           image={okanfitLogo}

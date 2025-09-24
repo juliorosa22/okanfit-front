@@ -407,3 +407,14 @@ button:focus-visible {
   flex-direction: column;
   justify-content: flex-start;
 }
+
+.okanfit-founder-img {
+  width: 240px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: contain;
+  margin-right: 1.5rem;
+  border: 3px solid #087FE7;
+  background: #fff;
+  box-shadow: 0 2px 8px 0 rgba(8,127,231,0.10);
+}
