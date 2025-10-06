@@ -5,6 +5,7 @@ import About from './pages/About.tsx';
 import News from './pages/News.tsx';
 import PrivacyPolicy from './pages/PrivacyPolicy.tsx';
 import TermsOfService from './pages/TermsOfService.tsx';
+import DataDeletion from './pages/DataDeletion.tsx'; // Import the new page
 import './App.css';
 import './index.css';
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/news" element={<News />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         <Route path="/terms-of-service" element={<TermsOfService />} />
+        <Route path="/data-deletion" element={<DataDeletion />} /> {/* Add the new route */}
       </Routes>
       <Footer />
     </Router>

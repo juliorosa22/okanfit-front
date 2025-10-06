@@ -30,5 +30,19 @@
   "terms_security": "You are responsible for maintaining the confidentiality of your account credentials.",
   "terms_termination": "We may suspend or terminate your access to OkanAssist at any time for violation of these terms.",
   "terms_changes": "We may update these Terms of Service at any time. Continued use of the service means you accept the new terms.",
-  "terms_contact": "For questions, contact us at okanfit.ai@gmail.com."
+  "terms_contact": "For questions, contact us at okanfit.ai@gmail.com.",
+
+  "dataDeletion": "Data Deletion",
+  "data_deletion_title": "Account & Data Deletion Request",
+  "data_deletion_intro": "This page provides instructions for requesting the deletion of your OkanAssist account and associated data, as provided by OkanFit.",
+  "data_deletion_steps_title": "How to Request Deletion",
+  "data_deletion_step_1": "Send an email to okanfit.ai@gmail.com from the email address associated with your OkanAssist account.",
+  "data_deletion_step_2": "Use the subject line: \"Account Deletion Request\".",
+  "data_deletion_step_3": "Our team will process your request and confirm the deletion via email within 30 days.",
+  "data_deletion_deleted_title": "What Data is Deleted",
+  "data_deletion_deleted_body": "Upon processing your request, we will permanently delete all personal data associated with your account, including your profile information, transaction history, reminders, and any data logged via the app or Telegram bot.",
+  "data_deletion_retained_title": "What Data May Be Retained",
+  "data_deletion_retained_body": "For legal and financial compliance (e.g., subscription payment records), we may retain anonymized transaction data for a limited period. This data will be fully disconnected from your personal identity.",
+  "data_deletion_confirmation_title": "Confirmation",
+  "data_deletion_confirmation_body": "Once the deletion process is complete, you will receive a final confirmation email. Please note that this action is irreversible."
 }

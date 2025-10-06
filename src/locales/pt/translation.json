@@ -29,5 +29,19 @@
   "terms_security": "Você é responsável por manter a confidencialidade de suas credenciais de acesso.",
   "terms_termination": "Podemos suspender ou encerrar seu acesso ao OkanAssist a qualquer momento em caso de violação destes termos.",
   "terms_changes": "Podemos atualizar estes Termos de Serviço a qualquer momento. O uso contínuo do serviço significa que você aceita os novos termos.",
-  "terms_contact": "Para dúvidas, entre em contato pelo e-mail okanfit.ai@gmail.com."
+  "terms_contact": "Para dúvidas, entre em contato pelo e-mail okanfit.ai@gmail.com.",
+
+  "dataDeletion": "Exclusão de Dados",
+  "data_deletion_title": "Solicitação de Exclusão de Conta e Dados",
+  "data_deletion_intro": "Esta página fornece instruções para solicitar a exclusão de sua conta OkanAssist e dados associados, fornecidos pela OkanFit.",
+  "data_deletion_steps_title": "Como Solicitar a Exclusão",
+  "data_deletion_step_1": "Envie um e-mail para okanfit.ai@gmail.com a partir do endereço de e-mail associado à sua conta OkanAssist.",
+  "data_deletion_step_2": "Use a linha de assunto: \"Solicitação de Exclusão de Conta\".",
+  "data_deletion_step_3": "Nossa equipe processará sua solicitação e confirmará a exclusão por e-mail em até 30 dias.",
+  "data_deletion_deleted_title": "Quais Dados São Excluídos",
+  "data_deletion_deleted_body": "Ao processar sua solicitação, excluiremos permanentemente todos os dados pessoais associados à sua conta, incluindo informações de perfil, histórico de transações, lembretes e quaisquer dados registrados pelo aplicativo ou bot do Telegram.",
+  "data_deletion_retained_title": "Quais Dados Podem Ser Retidos",
+  "data_deletion_retained_body": "Para conformidade legal e financeira (por exemplo, registros de pagamento de assinatura), podemos reter dados de transações anonimizados por um período limitado. Esses dados serão totalmente desvinculados de sua identidade pessoal.",
+  "data_deletion_confirmation_title": "Confirmação",
+  "data_deletion_confirmation_body": "Assim que o processo de exclusão for concluído, você receberá um e-mail de confirmação final. Observe que esta ação é irreversível."
 }
