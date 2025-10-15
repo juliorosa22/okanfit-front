@@ -69,12 +69,20 @@ const News: React.FC = () => {
           </div>
         </section>
 
-        {/* OkanAssist App (PlayStore) Section */}
+        {/* OkanAssist Web App Section */}
         <section className="bg-white rounded-lg shadow-md p-8 transition hover:shadow-xl mb-10">
-          <h2 className="text-3xl font-bold mb-2">OkanAssist App (PlayStore)</h2>
+          <h2 className="text-3xl font-bold mb-2">OkanAssist Web App</h2>
           <p className="text-gray-700 mb-6">
-            For a comprehensive and detailed management of your data, the OkanAssist mobile app offers a refined UI with dashboards, analytics, and seamless integration with the Telegram bot. Track your finances, visualize reminders, and gain insights—all from your phone.
+            For comprehensive data management, the OkanAssist Web App offers a refined UI with dashboards, analytics, and seamless integration with the Telegram bot. Track your finances, visualize reminders, and gain detailed insights from any desktop browser.
           </p>
+          <a 
+            href="https://www.assist.okanfit.dev.br/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-blue-600 hover:underline mt-4 mb-6 inline-block font-semibold"
+          >
+            Try the Web App &rarr;
+          </a>
           <div className="okanfit-image-gallery">
             <div className="okanfit-image-card">
               <img src={appHome} alt="App Home" className="okanfit-news-img" />
