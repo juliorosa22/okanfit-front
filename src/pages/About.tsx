@@ -1,11 +1,18 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import meImg from '../assets/me.jpg';
+import { Helmet } from 'react-helmet-async';
 
 const About: React.FC = () => {
   const { t } = useTranslation();
 
   return (
+    <>
+      <Helmet>
+        <title>About OkanFit | AI Solutions</title>
+        <meta name="description" content="Learn about OkanFit's mission to develop innovative AI solutions and meet the founder behind the vision." />
+      </Helmet>
+    
     <div className="page-content-defaults">
       <h1 className="text-4xl font-bold text-center mb-8">{t('about_title')}</h1>
 
@@ -61,6 +68,7 @@ const About: React.FC = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 
