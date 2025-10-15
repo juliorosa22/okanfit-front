@@ -11,11 +11,13 @@ import './index.css';
 
 import Header from './components/Header';
 import Footer from './components/Footer';
+import AnalyticsTracker from './components/AnalyticsTracker'; // Import the tracker
 
 function App() {
   return (
     <Router>
       <Header />
+      <AnalyticsTracker /> {/* Add the tracker here */}
       {/* Page Routes */}
       <Routes>
         <Route path="/" element={<Home />} />
