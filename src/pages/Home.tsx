@@ -1,4 +1,4 @@
-import { Helmet } from 'react-helmet-async';
+import { Helmet } from "@dr.pogodin/react-helmet";
 import HeroSection from '../components/HeroSection';
 import Announcements from '../components/Announcements';
 

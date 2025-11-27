@@ -1,8 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import meImg from '../assets/me.jpg';
-import { Helmet } from 'react-helmet-async';
-
+import { Helmet } from "@dr.pogodin/react-helmet";
 const About: React.FC = () => {
   const { t } = useTranslation();
 
